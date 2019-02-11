@@ -6,3 +6,6 @@
       shell: echo "Hi! Ansible is working"
     - name: Execute the script
       command: hostname
+      register: hostname
+
+- debug: msg="{{ hostname.stdout }}"
