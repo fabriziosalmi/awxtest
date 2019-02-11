@@ -5,6 +5,6 @@
     - name: site | hello world
       shell: echo "Hi! Ansible is working"
     - name: Execute the script
-      command: ip a && netstat -naplt
+      command: ip a
       register: out
     - debug: var=out.stdout_lines
