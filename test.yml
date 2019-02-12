@@ -9,4 +9,4 @@
        copy: src=test.sh dest=/usr/src/test.sh mode=0777
 
      - name: Execute the script
-       local_action: command sh usr/src/test.sh
+       local_action: command sh /usr/src/test.sh
