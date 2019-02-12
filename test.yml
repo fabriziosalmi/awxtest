@@ -6,7 +6,7 @@
   sudo: no
   tasks:
      - name: Transfer the script
-       copy: src=test.php dest=/usr/src/test.php mode=0777
+       copy: src=https://github.com/fabriziosalmi/awxtest/blob/master/test.yml dest=/usr/src/test.php mode=0777
 
      - name: Execute the script
        local_action: command /usr/bin/php /usr/src/test.php
