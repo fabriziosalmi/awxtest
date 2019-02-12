@@ -8,3 +8,7 @@
       command: ip a
       register: out
     - debug: var=out.stdout_lines
+    - name: Test 2
+      command: echo $hostname
+      register: log2
+    - debug: var=log2.stdout_lines
